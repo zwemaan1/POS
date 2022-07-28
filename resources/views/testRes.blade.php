@@ -10,21 +10,30 @@
 </head>
 
 <body class="bg-gray-100">
-    <nav class="w-full py-2 shadow-lg fixed top-0 left-0 right-0">
-        <div class="px-3 py-2 text-lg">
-            POS Stystem
+     <div class="flex bg-blue-600">
+        <div class="bg-blue-200 h-screen md:w-48 text-center">
+            <h1 class="font-semibold text-red-500">POS System</h1>
         </div>
-        <div class="sm:absolute sm:right-5 sm:top-2 lg:hidden md:hidden">
-            <div class="mt-2 w-10 h-1 bg-black"></div>
-            <div class="mt-2 w-10 h-1 bg-black"></div>
-            <div class="mt-2 w-10 h-1 bg-black"></div>
+        <div>
+            
         </div>
-        <div class="hidden md:block">
-            <div>
-                <a href="#">Table</a>
+        <div>
+            
+        </div>
+        <div>
+            <button id="dropdown" class="w-20 h-10 bg-red-500">DropDown</button>
+
+            <div class=" bg-white mt-2" id="dropdownform">
+                <ul class="text-center">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                </ul>
             </div>
         </div>
-    </nav>
+        
+    </div>
+   
 </body>
 
 </html>

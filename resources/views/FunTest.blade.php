@@ -107,5 +107,7 @@
     <a href="" style="--clr:#1e9bff" id="ania"><span id="anispan">Submit</span><i id="anii"></i></a>
     <a href="" style="--clr:#ff1867" id="ania"><span id="anispan">Cancle</span><i id="anii"></i></a>
     <a href="" style="--clr:#6eff3e" id="ania"><span id="anispan">Submit</span><i id="anii"></i></a>
+
+   
 </body>
 </html>
