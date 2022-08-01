@@ -381,7 +381,17 @@
                             </div>
                         </div>
                         
-                        <hr class="my-2 h-5">
+                        <hr class="mt-2 h-5">
+                       
+                        <hr class="mt-2 h-5">
+
+                        <div class="text-center">
+                            <a href="#" class=" py-3">
+                                <button class="text-white font-bold text-2xl bg-bluePOS-100 rounded-full h-10 w-full">Place Order</button>
+                            </a>
+                        </div>
+
+                       
 
 
                     </div>
