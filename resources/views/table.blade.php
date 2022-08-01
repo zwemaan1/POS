@@ -1,60 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    @vite('resources/css/app.css')
-</head>
- <!-- <a href="/new" class="hover:border-blue-500 hover:border-solid hover:bg-white hover:text-blue-500 group w-full flex flex-col items-center justify-center rounded-md border-2 border-dashed border-slate-300 text-sm leading-6 text-slate-900 font-medium py-3">
-     <svg class="group-hover:text-blue-500 mb-1 text-slate-400" width="20" height="20" fill="currentColor" aria-hidden="true">
-    <path d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z" />
-    </svg>
-     New project
-                        </a> -->
-<body class="bg-gray-100">
-   <div class="flex">
-<!-- SideBar Start -->
-        <div class="bg-bluePOS-100  p-5 pt-8 relative w-48 text-center">
-            <div class="inline-flex text-lg">
-                <span class="mr-2 text-red-500 font-semibold">
-                POS 
-                </span>
-                 
-                <span class="font-semibold">
-                    System
-                </span>
-            </div>
-            <div class="mt-10">
-                <ul class="text-center">
-                    <li class="mt-10">
-                        <button class="p-5 bg-white rounded-lg w-20 h-20 pt-3 hover:bg-blue-500 group">
-                            <span class="">
-                                <svg class="fill-blue-500 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 32C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM152 96H64V160H152V96zM208 160H296V96H208V160zM448 96H360V160H448V96zM64 288H152V224H64V288zM296 224H208V288H296V224zM360 288H448V224H360V288zM152 352H64V416H152V352zM208 416H296V352H208V416zM448 352H360V416H448V352z"/></svg>
-                            </span>
+@extends('layouts.index')
+@section('title','Tables Page')
 
-                            <span class="font-semibold group-hover:text-white">
-                                Table
-                            </span>
-                    
-                        </button>
-                    </li>
-                    <li class="mt-7">
-                            <button class="p-5 bg-white rounded-lg w-20 h-20 pt-3 hover:bg-blue-500 group">
-                                <span class="">
-                                    <svg class="fill-blue-500 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M96 128C96.53 128 97.07 128 97.6 128C105 91.49 137.3 64 176 64C190.1 64 204.1 68.1 216.9 75.25C230.2 49.55 257.1 32 288 32C318.9 32 345.8 49.56 359.1 75.25C371 68.1 385 64 400 64C438.7 64 470.1 91.49 478.4 128C478.9 128 479.5 128 480 128C515.3 128 544 156.7 544 192C544 203.7 540.9 214.6 535.4 224H40.56C35.12 214.6 32 203.7 32 192C32 156.7 60.65 128 96 128H96zM16 283.4C16 268.3 28.28 256 43.43 256H532.6C547.7 256 560 268.3 560 283.4C560 356.3 512.6 418.2 446.9 439.8C447.6 442.4 448 445.2 448 448C448 465.7 433.7 480 416 480H160C142.3 480 128 465.7 128 448C128 445.2 128.4 442.4 129.1 439.8C63.4 418.2 16 356.3 16 283.4H16z"/></svg>
-                                </span>
-                                <span class="font-semibold group-hover:text-white">
-                                    Food
-                                </span>
-                            </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- SideBar End -->
-
+       
+@section('content')
         <div class="bg-bgPOS-100 w-screen ">
             <!-- Top Search Bar Start -->
             <div class="relative">
@@ -438,10 +386,7 @@
             <!-- left And Right div End -->
 
         </div>
+@endsection
         
-   </div>
-   <!-- flex end -->
 
 
-</body>
-</html>

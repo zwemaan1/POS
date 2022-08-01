@@ -17,8 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/tailwind', function () {
-    return view('tailwind');
+Route::get('/food', function () {
+    return view('food');
+});
+
+Route::get('/tables', function(){
+    return view('table');
 });
 
 
@@ -29,3 +33,4 @@ Route::get('/testRes', function(){
 Route::get("/FunTest", function(){
     return view("FunTest");
 });
+
