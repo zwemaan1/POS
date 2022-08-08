@@ -14,7 +14,7 @@
             <div class="grid grid-cols-12 mt-20">
                 <div class="col-span-8">
 
-                    <div class="h-24 bg-bgPOS-100 fixe">
+                    <div class="h-24 bg-bgPOS-100">
                         <!-- Filter Button Start -->
                        
                         <div class="pt-2 flex justify-around">
@@ -98,7 +98,7 @@
                         <div>
 
                             <div class="grid grid-cols-4 gap-10 p-5">
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-lg ">
+                                <div class="max-w-xs bg-blue-200 rounded-lg shadow-lg bg-opacity-80 bg-clip-padding" style="backdrop-filter: blur(20px);">
                                     <div class="p-2">
                                         <a href="#" class="">
                                             <img class="rounded-t-lg" src="img/f1.jpg" alt="">
@@ -213,6 +213,57 @@
                                     </div>
                                 </div>
                             
+                            </div>
+
+                            <div class="grid grid-cols-4 gap-10 p-5">
+                                
+                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
+                                    <div class="p-2">
+                                        <a href="#" class="">
+                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                            <p class="font-bold text-blue-500">Pizza</p>
+                                            <p class="font-bold text-black">$8.5</p>
+                                    </div>
+                                </div>
+
+                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
+                                    <div class="p-2">
+                                        <a href="#" class="">
+                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <p class="font-bold text-blue-500">Pizza</p>
+                                        <p class="font-bold text-black">$8.5</p>
+                                    </div>
+                                </div>
+
+                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
+                                    <div class="p-2">
+                                        <a href="#" class="">
+                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <p class="font-bold text-blue-500">Pizza</p>
+                                        <p class="font-bold text-black">$8.5</p>
+                                    </div>
+                                </div>
+
+                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
+                                    <div class="p-2">
+                                        <a href="#" class="">
+                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <p class="font-bold text-blue-500">Pizza</p>
+                                        <p class="font-bold text-black">$8.5</p>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="grid grid-cols-4 gap-10 p-5">
@@ -390,10 +441,6 @@
                                 <button class="text-white font-bold text-2xl bg-bluePOS-100 rounded-full h-10 w-full">Place Order</button>
                             </a>
                         </div>
-
-                       
-
-
                     </div>
                     <!-- Order List Menu End -->
                 </div>

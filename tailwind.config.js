@@ -18,8 +18,21 @@ module.exports = {
         },
         bgPOS:{
           100: '#F2F4F3',
+        },
+        table:{
+          100: '#75C6F7',
         }
       }
+    },
+    screens: {
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
     },
   },
   plugins: [],

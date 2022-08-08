@@ -2,7 +2,9 @@
 @section('title', 'Test')
 @section('content')
 
-            <div class="h-20 bg-bgPOS-100 p-10 w-screen fixed z-50">
+            
+
+            <div class="h-20 bg-bgPOS-100 p-10 w-screen fixed z-30">
                 <div class="relative bottom-10 left-1">
                     <input type="text" class="m-7 rounded-full w-1/4 px-4 py-1 text-base text-blue-500 focue:outline-none font-semibold outline-none placeholder-bluePOS-200 bg-gray-200" placeholder="Search Category or Menu....">
                     <button class= "p-2 rounded-full inline-block absolute top-7 bg-gray-200">
@@ -11,383 +13,318 @@
                 </div>
             </div>
             <hr>    
-            <div class="grid grid-cols-12 mt-20">
-                <div class="col-span-8">
+            <div class="grid grid-cols-12 mt-20 h-screen">
+                <div class="col-span-8 bg-bgPOS-100">
+                    <!-- Left Table Side Start -->
+                   <div class="bg-white p-4 rounded-lg mx-4 my-5">
+                        <div class="mr-50"><label class="items-center font-bold text-lg text-black ">Restaurant</label></div>
+                        <hr class="mt-2">
+                        <!-- Tables Start -->
+                        <div class="grid grid-cols-5 gap-4 p-3">
 
-                    <div class="h-24 bg-bgPOS-100 fixe">
-                        <!-- Filter Button Start -->
-                       
-                        <div class="pt-2 flex justify-around">
-                            <button class="p-5 bg-white rounded-lg w-28 h-16 pt-3 hover:bg-blue-500 group drop-shadow-xl">
-                                <span class="flex justify-center ">
-                                    <svg class="fill-blue-500 group-hover:fill-white w-10 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
-                                </span>
-                                <span class="font-semibold group-hover:text-white">
-                                    Signature
-                                </span>
+                           <button class="h-32 bg-blue-800 rounded-lg relative" onclick="red()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 1</p>
+                            <svg class="fill-white h-7 w-7 absolute bottom-3 left-2 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48zM152 352V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H174.9C208.6 128 239.8 145.7 257.2 174.6L315.4 271.5C324.5 286.7 319.6 306.3 304.5 315.4C289.3 324.5 269.7 319.6 260.6 304.5L232 256.9V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352L152 352z"/></svg>
+                           </button>
 
-                            </button>
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 2</p>
+                         
+                           </button>
 
-                            <button class="p-5 bg-white rounded-lg w-28 h-16 pt-3 hover:bg-blue-500 group drop-shadow-xl">
-                                <span class="flex justify-center">
-                                    <svg class="fill-blue-500 group-hover:fill-white w-10 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M152.1 38.16C161.9 47.03 162.7 62.2 153.8 72.06L81.84 152.1C77.43 156.9 71.21 159.8 64.63 159.1C58.05 160.2 51.69 157.6 47.03 152.1L7.029 112.1C-2.343 103.6-2.343 88.4 7.029 79.03C16.4 69.66 31.6 69.66 40.97 79.03L63.08 101.1L118.2 39.94C127 30.09 142.2 29.29 152.1 38.16V38.16zM152.1 198.2C161.9 207 162.7 222.2 153.8 232.1L81.84 312.1C77.43 316.9 71.21 319.8 64.63 319.1C58.05 320.2 51.69 317.6 47.03 312.1L7.029 272.1C-2.343 263.6-2.343 248.4 7.029 239C16.4 229.7 31.6 229.7 40.97 239L63.08 261.1L118.2 199.9C127 190.1 142.2 189.3 152.1 198.2V198.2zM224 96C224 78.33 238.3 64 256 64H480C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H256C238.3 128 224 113.7 224 96V96zM224 256C224 238.3 238.3 224 256 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H256C238.3 288 224 273.7 224 256zM160 416C160 398.3 174.3 384 192 384H480C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H192C174.3 448 160 433.7 160 416zM0 416C0 389.5 21.49 368 48 368C74.51 368 96 389.5 96 416C96 442.5 74.51 464 48 464C21.49 464 0 442.5 0 416z"/></svg>
-                                </span>
-                                <span class="font-semibold group-hover:text-white">
-                                    All
-                                </span>
-                            </button>
 
-                            <button class="p-5 bg-white rounded-lg w-28 h-16 pt-3 hover:bg-blue-500 group drop-shadow-xl">
-                                <span class="flex justify-center">
-                                    <svg class="fill-blue-500 group-hover:fill-white w-10 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M152.1 38.16C161.9 47.03 162.7 62.2 153.8 72.06L81.84 152.1C77.43 156.9 71.21 159.8 64.63 159.1C58.05 160.2 51.69 157.6 47.03 152.1L7.029 112.1C-2.343 103.6-2.343 88.4 7.029 79.03C16.4 69.66 31.6 69.66 40.97 79.03L63.08 101.1L118.2 39.94C127 30.09 142.2 29.29 152.1 38.16V38.16zM152.1 198.2C161.9 207 162.7 222.2 153.8 232.1L81.84 312.1C77.43 316.9 71.21 319.8 64.63 319.1C58.05 320.2 51.69 317.6 47.03 312.1L7.029 272.1C-2.343 263.6-2.343 248.4 7.029 239C16.4 229.7 31.6 229.7 40.97 239L63.08 261.1L118.2 199.9C127 190.1 142.2 189.3 152.1 198.2V198.2zM224 96C224 78.33 238.3 64 256 64H480C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H256C238.3 128 224 113.7 224 96V96zM224 256C224 238.3 238.3 224 256 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H256C238.3 288 224 273.7 224 256zM160 416C160 398.3 174.3 384 192 384H480C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H192C174.3 448 160 433.7 160 416zM0 416C0 389.5 21.49 368 48 368C74.51 368 96 389.5 96 416C96 442.5 74.51 464 48 464C21.49 464 0 442.5 0 416z"/></svg>
-                                </span>
-                                <span class="font-semibold group-hover:text-white">
-                                    All
-                                </span>
+                           <button class="h-32 bg-blue-800 rounded-lg relative" onclick="red()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 3</p>
+                            <svg class="fill-white h-7 w-7 absolute bottom-3 left-2 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48zM152 352V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H174.9C208.6 128 239.8 145.7 257.2 174.6L315.4 271.5C324.5 286.7 319.6 306.3 304.5 315.4C289.3 324.5 269.7 319.6 260.6 304.5L232 256.9V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352L152 352z"/></svg>
+                           </button>
 
-                            </button>
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 4</p>
+                           
+                           </button>
 
-                            <button class="p-5 bg-white rounded-lg w-28 h-16 pt-3 hover:bg-blue-500 group drop-shadow-xl">
-                                <span class="flex justify-center">
-                                    <svg class=" fill-blue-500 group-hover:fill-white w-10 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 168.9c0 1.766-.0229 3.398-.0768 5.164c-16.91-9.132-35.51-13.76-53.96-13.76c-82.65 0-105.5 74.17-105.5 105.4c0 27.04 9.923 54.43 29.63 76.25c-19.52 6.629-39.99 9.997-60.62 9.997l-87.18 .0038l-40.59 40.49c-6.104 6.103-8.921 14.01-8.921 22.17c0 13.98 7.244 17.1 7.244 37.03C192.1 485.4 164.6 512 131.7 512c-15.63 0-31.11-6.055-42.72-17.8c-11.55-11.46-16.82-26.31-16.82-41.26c0-4.948 .575-9.903 1.695-14.75c-4.842 1.11-9.793 1.681-14.72 1.681c-42.15 0-59.13-36.64-59.13-59.5c0-33.43 27.15-60.34 60.39-60.34c18.97 0 22.97 7.219 36.96 7.219c8.159 0 16.04-2.811 22.14-8.914l40.57-40.47L160.1 191.1c0-63.1 27.79-107 63.17-142.4c33.13-33.06 76.39-49.59 119.7-49.59s86.79 16.53 119.9 49.59C495.9 82.5 512 125.7 512 168.9z"/></svg>
-                                </span>
-                                <span class="font-semibold group-hover:text-white">
-                                    Chicken
-                                </span>
-
-                            </button>
-
-                            <button class="p-5 bg-white rounded-lg w-28 h-16 pt-3 hover:bg-blue-500 group drop-shadow-xl">
-                                <span class="flex justify-center">
-                                    <svg class="fill-blue-500 group-hover:fill-white w-10 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M180.5 141.5C219.7 108.5 272.6 80 336 80C399.4 80 452.3 108.5 491.5 141.5C530.5 174.5 558.3 213.1 572.4 241.3C577.2 250.5 577.2 261.5 572.4 270.7C558.3 298 530.5 337.5 491.5 370.5C452.3 403.5 399.4 432 336 432C272.6 432 219.7 403.5 180.5 370.5C164.3 356.7 150 341.9 137.8 327.3L48.12 379.6C35.61 386.9 19.76 384.9 9.474 374.7C-.8133 364.5-2.97 348.7 4.216 336.1L50 256L4.216 175.9C-2.97 163.3-.8133 147.5 9.474 137.3C19.76 127.1 35.61 125.1 48.12 132.4L137.8 184.7C150 170.1 164.3 155.3 180.5 141.5L180.5 141.5zM416 224C398.3 224 384 238.3 384 256C384 273.7 398.3 288 416 288C433.7 288 448 273.7 448 256C448 238.3 433.7 224 416 224z"/></svg>
-                                </span>
-                                <span class="font-semibold group-hover:text-white">
-                                    Seafood
-                                </span>
-
-                            </button>
-
-                            <button class="p-5 bg-white rounded-lg w-28 h-16 pt-3 hover:bg-blue-500 group drop-shadow-xl">
-                                <span class="flex justify-center">
-                                    <svg class="fill-blue-500 group-hover:fill-white w-10 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M502 57.63C523.3 36.38 508.3 0 478.3 0H33.72C3.711 0-11.29 36.38 9.962 57.63l214 214V448H175.1c-26.51 0-47.1 21.49-47.1 48c0 8.836 7.164 16 16 16h224c8.836 0 16-7.164 16-16c0-26.51-21.49-48-48-48h-47.1V271.6L502 57.63zM405.1 64l-64.01 64H170.9L106.9 64H405.1z"/></svg>
-                                
-                                </span>
-                                <span class="font-semibold group-hover:text-white">
-                                    Drink
-                                </span>
-
-                            </button>
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 5</p>
+                           
+                           </button>
                         </div>
-                        <!-- Filter Button End -->
-                    </div>
 
-                    <div class="h-20 bg-bgPOS-100 p-5 relative">
-                        <div>
-                            <button type="button" class="absolute right-2 bg-white shadow-lg text-black font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2 hover:text-white hover:bg-blue-500 group">
-                            <svg class="mr-2 -ml-1 w-5 h-5 fill-blue-500 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
-                                Add New Item
-                            </button>
+                        <div class="grid grid-cols-5 gap-4 p-3">
+
+                           <button class="h-32 bg-blue-800 rounded-lg relative" onclick="red()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 1</p>
+                            <svg class="fill-white h-7 w-7 absolute bottom-3 left-2 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48zM152 352V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H174.9C208.6 128 239.8 145.7 257.2 174.6L315.4 271.5C324.5 286.7 319.6 306.3 304.5 315.4C289.3 324.5 269.7 319.6 260.6 304.5L232 256.9V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352L152 352z"/></svg>
+                           </button>
+
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 2</p>
+                         
+                           </button>
+
+
+                           <button class="h-32 bg-blue-800 rounded-lg relative" onclick="red()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 3</p>
+                            <svg class="fill-white h-7 w-7 absolute bottom-3 left-2 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48zM152 352V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H174.9C208.6 128 239.8 145.7 257.2 174.6L315.4 271.5C324.5 286.7 319.6 306.3 304.5 315.4C289.3 324.5 269.7 319.6 260.6 304.5L232 256.9V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352L152 352z"/></svg>
+                           </button>
+
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 4</p>
+                           
+                           </button>
+
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 5</p>
+                           
+                           </button>
                         </div>
-                    </div>
-<!-- -------------------------------------------------------------------------------------------------------------- -->
 
-                    <div class=" bg-bgPOS-100">
-                        <!-- Card Start -->
-                        <div>
+                        <div class="grid grid-cols-5 gap-4 p-3">
 
-                            <div class="grid grid-cols-4 gap-10 p-5">
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-lg ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2 flex gap-24">
-                                        <div>
-                                                <p class="font-bold text-blue-500">Pizza</p>
-                                                <p class="font-bold text-black">$8.5</p>
-                                        </div>
-                                        <div class="justify-end">
-                                            <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
-                                            <span class="sr-only">Open dropdown</span>
-                                            <svg class="fill-blue-500 w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                           <button class="h-32 bg-blue-800 rounded-lg relative hover:border-4" onclick="red()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 1</p>
+                            <svg class="fill-white h-7 w-7 absolute bottom-3 left-2 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48zM152 352V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H174.9C208.6 128 239.8 145.7 257.2 174.6L315.4 271.5C324.5 286.7 319.6 306.3 304.5 315.4C289.3 324.5 269.7 319.6 260.6 304.5L232 256.9V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352L152 352z"/></svg>
+                           </button>
 
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2">
-                                        <p class="font-bold text-blue-500">Pizza</p>
-                                        <p class="font-bold text-black">$8.5</p>
-                                    </div>
-                                </div>
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 2</p>
+                         
+                           </button>
 
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2">
-                                        <p class="font-bold text-blue-500">Pizza</p>
-                                        <p class="font-bold text-black">$8.5</p>
-                                    </div>
-                                </div>
 
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2">
-                                        <p class="font-bold text-blue-500">Pizza</p>
-                                        <p class="font-bold text-black">$8.5</p>
-                                    </div>
-                                </div>
-                            </div>
+                           <button class="h-32 bg-blue-800 rounded-lg relative" onclick="red()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 3</p>
+                            <svg class="fill-white h-7 w-7 absolute bottom-3 left-2 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48zM152 352V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H174.9C208.6 128 239.8 145.7 257.2 174.6L315.4 271.5C324.5 286.7 319.6 306.3 304.5 315.4C289.3 324.5 269.7 319.6 260.6 304.5L232 256.9V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352L152 352z"/></svg>
+                           </button>
 
-                            <div class="grid grid-cols-4 gap-10 p-5">
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 4</p>
+                           
+                           </button>
 
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-lg ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2 flex gap-24">
-                                        <div>
-                                                <p class="font-bold text-blue-500">Pizza</p>
-                                                <p class="font-bold text-black">$8.5</p>
-                                        </div>
-                                        <div class="justify-end">
-                                            <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
-                                                <span class="sr-only">Open dropdown</span>
-                                                <svg class="fill-blue-500 w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2">
-                                        <p class="font-bold text-blue-500">Pizza</p>
-                                        <p class="font-bold text-black">$8.5</p>
-                                    </div>
-                                </div>
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 5</p>
+                           
+                           </button>
+                        </div>
 
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2">
-                                        <p class="font-bold text-blue-500">Pizza</p>
-                                        <p class="font-bold text-black">$8.5</p>
-                                    </div>
-                                </div>
+                        <div class="grid grid-cols-5 gap-4 p-3">
 
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2">
-                                        <p class="font-bold text-blue-500">Pizza</p>
-                                        <p class="font-bold text-black">$8.5</p>
-                                    </div>
-                                </div>
-                            
-                            </div>
+                           <button class="h-32 bg-blue-800 rounded-lg relative" onclick="red()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 1</p>
+                            <svg class="fill-white h-7 w-7 absolute bottom-3 left-2 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48zM152 352V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H174.9C208.6 128 239.8 145.7 257.2 174.6L315.4 271.5C324.5 286.7 319.6 306.3 304.5 315.4C289.3 324.5 269.7 319.6 260.6 304.5L232 256.9V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352L152 352z"/></svg>
+                           </button>
 
-                            <div class="grid grid-cols-4 gap-10 p-5">
-                                
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2">
-                                            <p class="font-bold text-blue-500">Pizza</p>
-                                            <p class="font-bold text-black">$8.5</p>
-                                    </div>
-                                </div>
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 2</p>
+                         
+                           </button>
 
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2">
-                                        <p class="font-bold text-blue-500">Pizza</p>
-                                        <p class="font-bold text-black">$8.5</p>
-                                    </div>
-                                </div>
 
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2">
-                                        <p class="font-bold text-blue-500">Pizza</p>
-                                        <p class="font-bold text-black">$8.5</p>
-                                    </div>
-                                </div>
+                           <button class="h-32 bg-blue-800 rounded-lg relative" onclick="red()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 3</p>
+                            <svg class="fill-white h-7 w-7 absolute bottom-3 left-2 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48zM152 352V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H174.9C208.6 128 239.8 145.7 257.2 174.6L315.4 271.5C324.5 286.7 319.6 306.3 304.5 315.4C289.3 324.5 269.7 319.6 260.6 304.5L232 256.9V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352L152 352z"/></svg>
+                           </button>
 
-                                <div class="max-w-xs bg-white rounded-lg border-2 border-blue-500 shadow-md ">
-                                    <div class="p-2">
-                                        <a href="#" class="">
-                                            <img class="rounded-t-lg" src="img/f1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-2">
-                                        <p class="font-bold text-blue-500">Pizza</p>
-                                        <p class="font-bold text-black">$8.5</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                        <!-- Card End -->
-                    </div>
-<!-- -------------------------------------------------------------------------------------------------------------- -->
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 4</p>
+                           
+                           </button>
+
+                           <button class="h-32 bg-table-100 rounded-lg relative" onclick="green()">
+                            <p class="absolute top-1 left-2 text-lg font-bold text-white">Table 5</p>
+                           
+                           </button>
+                        </div>
+               
+                        <!-- Tables End -->
+                   </div>
+                   <!-- Left Table Side End -->
                 </div>
-                <div class="col-span-4 bg-bgPOS-100 p-5">
+
+                <div class="col-span-4 bg-bgPOS-100 p-5 hidden" id="GreenOrderList">
                     <!-- Order Menu Start -->
                     <div class="bg-white rounded-lg p-4">
                         <h1 class="font-semibold">New Order List</h1>
                         <hr>
+                    <div class="mt-2">
+                            <Button class="p-3 w-30 bg-bluePOS-100 rounded-lg text-white font-semibold">Merge Table</Button> 
+                            <Button class="p-3 w-30 bg-bluePOS-100 rounded-lg text-white font-semibold">Go To menu</Button> 
+                        </div>
+                    </div>
+                    <!-- Order List Menu End -->
+                </div>
+
+                <div class="col-span-4 bg-bgPOS-100 p-5" id="RedOrderList">
+                    <!-- Order Menu Start -->
+
+                    <div class="bg-white rounded-lg p-4">
+                        <h1 class="font-semibold">View Order List</h1>
+                        <hr>
                         <!-- Side Menu Start -->
-                        <div class="mt-5">
-                            <div class="bg-bluePOS-100 flex px-4 rounded-lg">
-                                    <div class="p-2">
-                                        <img class=" w-16 h-16 rounded-full" src="img/f1.jpg" alt="IMG" />
-                                    </div>
-                                    <div>
-                                        <h1 class="text-white font-semibold mt-2">Pizza</h1>
+                        <div class="bg-bluePOS-100 w-full mt-2 rounded-lg p-2 relative">
+                            
+                                <img class="rounded-lg w-14 h-14" src="img/f1.jpg" alt="IMG" />
 
-                                        <div class="mt-2">
-                                            <button class="w-5 h-5 bg-white rounded-full"><span>a</span></button>
-                                            <button class="w-10 h-5 bg-white rounded-full">a</button>
-                                            <button class="w-5 h-5 bg-white rounded-full">a</button>
-                                        </div>  
-                                    </div>
-
-                                    <div class="w-24 text-center items-center pt-10">
-                                    
-                                    </div>
-
-                                    <div class="border-y-4 border-x-2 border-y-white  flex items-center"><span class="px-3 font-semibold text-white text-center  w-20">$328.5</span>
-                                    </div>
-                                    <a href="#" class="relative">
-                                        <svg class="w-10 h-10 absolute top-5 left-2 fill-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-                                    </a>
-                            </div>
+                                <p class="absolute top-1 left-24 text-lg text-white font-bold">Pizza</p>
+                                <p class="absolute top-8 left-24 text-lg text-white font-bold">Qty:1</p>
+                                <p class="absolute top-5 right-24 text-lg text-white font-bold">$8.5</p>
+                            
                         </div>
-                        <div class="mt-5">
-                            <div class="bg-bluePOS-100 flex px-4 rounded-lg">
-                                    <div class="p-2">
-                                        <img class=" w-16 h-16 rounded-full" src="img/f1.jpg" alt="IMG" />
-                                    </div>
-                                    <div>
-                                        <h1 class="text-white font-semibold mt-2">Pizza</h1>
 
-                                        <div class="mt-2">
-                                            <button class="w-5 h-5 bg-white rounded-full"><span>a</span></button>
-                                            <button class="w-10 h-5 bg-white rounded-full">a</button>
-                                            <button class="w-5 h-5 bg-white rounded-full">a</button>
-                                        </div>  
-                                    </div>
+                        <div class="bg-bluePOS-100 w-full mt-2 rounded-lg p-2 relative">
+                            
+                            <img class="rounded-lg w-14 h-14" src="img/f1.jpg" alt="IMG" />
 
-                                    <div class="w-24 text-center items-center pt-10">
-                                    
-                                    </div>
-
-                                    <div class="border-y-4 border-x-2 border-y-white  flex items-center"><span class="px-3 font-semibold text-white text-center  w-20">$328.5</span>
-                                    </div>
-                                    <a href="#" class="relative">
-                                        <svg class="w-10 h-10 absolute top-5 left-2 fill-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-                                    </a>
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <div class="bg-bluePOS-100 flex px-4 rounded-lg">
-                                    <div class="p-2">
-                                        <img class=" w-16 h-16 rounded-full" src="img/f1.jpg" alt="IMG" />
-                                    </div>
-                                    <div>
-                                        <h1 class="text-white font-semibold mt-2">Pizza</h1>
-
-                                        <div class="mt-2">
-                                            <button class="w-5 h-5 bg-white rounded-full"><span>a</span></button>
-                                            <button class="w-10 h-5 bg-white rounded-full">a</button>
-                                            <button class="w-5 h-5 bg-white rounded-full">a</button>
-                                        </div>  
-                                    </div>
-
-                                    <div class="w-24 text-center items-center pt-10">
-                                    
-                                    </div>
-
-                                    <div class="border-y-4 border-x-2 border-y-white  flex items-center"><span class="px-3 font-semibold text-white text-center  w-20">$328.5</span>
-                                    </div>
-                                    <a href="#" class="relative">
-                                        <svg class="w-10 h-10 absolute top-5 left-2 fill-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-                                    </a>
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <div class="bg-bluePOS-100 flex px-4 rounded-lg">
-                                    <div class="p-2">
-                                        <img class=" w-16 h-16 rounded-full" src="img/f1.jpg" alt="IMG" />
-                                    </div>
-                                    <div>
-                                        <h1 class="text-white font-semibold mt-2">Pizza</h1>
-
-                                        <div class="mt-2">
-                                            <button class="w-5 h-5 bg-white rounded-full"><span>a</span></button>
-                                            <button class="w-10 h-5 bg-white rounded-full">a</button>
-                                            <button class="w-5 h-5 bg-white rounded-full">a</button>
-                                        </div>  
-                                    </div>
-
-                                    <div class="w-24 text-center items-center pt-10">
-                                    
-                                    </div>
-
-                                    <div class="border-y-4 border-x-2 border-y-white  flex items-center"><span class="px-3 font-semibold text-white text-center  w-20">$328.5</span>
-                                    </div>
-                                    <a href="#" class="relative">
-                                        <svg class="w-10 h-10 absolute top-5 left-2 fill-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-                                    </a>
-                            </div>
-                        </div>
+                            <p class="absolute top-1 left-24 text-lg text-white font-bold">Pizza</p>
+                            <p class="absolute top-8 left-24 text-lg text-white font-bold">Qty:1</p>
+                            <p class="absolute top-5 right-24 text-lg text-white font-bold">$8.5</p>
                         
-                        <hr class="mt-2 h-5">
+                    </div>
+
+                    <div class="bg-bluePOS-100 w-full mt-2 rounded-lg p-2 relative">
+                            
+                            <img class="rounded-lg w-14 h-14" src="img/f1.jpg" alt="IMG" />
+
+                            <p class="absolute top-1 left-24 text-lg text-white font-bold">Pizza</p>
+                            <p class="absolute top-8 left-24 text-lg text-white font-bold">Qty:1</p>
+                            <p class="absolute top-5 right-24 text-lg text-white font-bold">$8.5</p>
+                        
+                    </div>
+
+                    <div class="bg-bluePOS-100 w-full mt-2 rounded-lg p-2 relative">
+                            
+                            <img class="rounded-lg w-14 h-14" src="img/f1.jpg" alt="IMG" />
+
+                            <p class="absolute top-1 left-24 text-lg text-white font-bold">Pizza</p>
+                            <p class="absolute top-8 left-24 text-lg text-white font-bold">Qty:1</p>
+                            <p class="absolute top-5 right-24 text-lg text-white font-bold">$8.5</p>
+                        
+                    </div>
+
+                    <div class="flex justify-evenly">
+                        <a href="#">
+                            <button class="text-white font-bold text-sm bg-black rounded-lg px-3 py-2 flex mt-3 w-30 show-merge-modal">
+                            <svg  class="fill-white h-6 w-6 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M208 239.1H294.7C307 211.7 335.2 191.1 368 191.1C412.2 191.1 448 227.8 448 271.1C448 316.2 412.2 352 368 352C335.2 352 307 332.3 294.7 303.1H208C171.1 303.1 138.7 292.1 112 272V358.7C140.3 371 160 399.2 160 432C160 476.2 124.2 512 80 512C35.82 512 0 476.2 0 432C0 399.2 19.75 371 48 358.7V153.3C19.75 140.1 0 112.8 0 80C0 35.82 35.82 0 80 0C124.2 0 160 35.82 160 80C160 112.6 140.5 140.7 112.4 153.2C117 201.9 158.1 240 208 240V239.1zM80 103.1C93.25 103.1 104 93.25 104 79.1C104 66.74 93.25 55.1 80 55.1C66.75 55.1 56 66.74 56 79.1C56 93.25 66.75 103.1 80 103.1zM80 456C93.25 456 104 445.3 104 432C104 418.7 93.25 408 80 408C66.75 408 56 418.7 56 432C56 445.3 66.75 456 80 456zM368 247.1C354.7 247.1 344 258.7 344 271.1C344 285.3 354.7 295.1 368 295.1C381.3 295.1 392 285.3 392 271.1C392 258.7 381.3 247.1 368 247.1z"/></svg>
+                                <span class="ml-1">Merge Table</span>
+                            </button>
+                        </a>  
+
+                        <a href="#">
+                            <button class="text-white font-bold text-sm bg-black rounded-lg px-3 py-2 flex mt-3 w-30 show-split-modal">
+                            <svg class="fill-white h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M246.6 150.6C234.1 163.1 213.9 163.1 201.4 150.6C188.9 138.1 188.9 117.9 201.4 105.4L297.4 9.372C309.9-3.124 330.1-3.124 342.6 9.372L438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6C426.1 163.1 405.9 163.1 393.4 150.6L352 109.3V384C352 419.3 380.7 448 416 448H480C497.7 448 512 462.3 512 480C512 497.7 497.7 512 480 512H416C345.3 512 288 454.7 288 384C288 348.7 259.3 320 224 320H109.3L150.6 361.4C163.1 373.9 163.1 394.1 150.6 406.6C138.1 419.1 117.9 419.1 105.4 406.6L9.38 310.6L9.305 310.6C3.575 304.8 .0259 296.9 .0003 288.1L2.428 275.8C3.99 271.1 6.305 268.4 9.372 265.4L105.4 169.4C117.9 156.9 138.1 156.9 150.6 169.4C163.1 181.9 163.1 202.1 150.6 214.6L109.3 255.1H224C247.3 255.1 269.2 262.2 288 273.1V109.3L246.6 150.6zM0 287.9C.0125 283.6 .8749 279.5 2.428 275.8C.8214 279.6 .0122 283.8 0 287.9zM0 288.1V287.1V287.9V288.1z"/></svg>
+                                <span class="ml-1">Split Table</span>
+                            </button>
+                        </a> 
+                        
+                        <a href="#">
+                            <button class="text-white font-bold text-sm bg-black rounded-lg px-3 py-2 flex mt-3 w-30 show-transfer-modal">
+                            <svg class="fill-white h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M32 176h370.8l-57.38 57.38c-12.5 12.5-12.5 32.75 0 45.25C351.6 284.9 359.8 288 368 288s16.38-3.125 22.62-9.375l112-112c12.5-12.5 12.5-32.75 0-45.25l-112-112c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L402.8 112H32c-17.69 0-32 14.31-32 32S14.31 176 32 176zM480 336H109.3l57.38-57.38c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0l-112 112c-12.5 12.5-12.5 32.75 0 45.25l112 112C127.6 508.9 135.8 512 144 512s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L109.3 400H480c17.69 0 32-14.31 32-32S497.7 336 480 336z"/></svg>
+                                <span class="ml-1">Transfer</span>
+                            </button>
+                        </a>
+                        
+                    </div>
+                    
+
+                    <!-- Merge Modal Start -->
+                    <div class="merge-modal h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 z-40 hidden">
+                        <!-- Modal -->
+                        <div class="bg-white rounded shadow-lg w-1/3">
+                            <!-- Modal Header -->
+                            <div class="border-b px-4 py-2 flex justify-between">
+                            <h3>Merge Modal</h3>
+                            <!-- <button class="text-black close-modal">&cross;</button> -->
+                            </div>
+                            <!-- Modal Body -->
+                            <div class="p-3">
+                               <div>
+                                    <span>Merger with:</span>
+                                    <button class="bg-blue-200 rounded-lg py-2 px-3">Select Table</button>
+                                </div>
+                            </div>
+                            <div class="flex justify-end itmes-center w-100 border-t p-3">
+                                <button class="bg-red-500 hover:bg-red-700 px-3 py-1 rounded text-white mr-1 close-merge-modal">Cancel</button>
+                                <button class="bg-blue-500 hover:bg-blue-700 px-3 py-1 rounded text-white">Okay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Merge Modal End -->
+
+                    <!-- Split Modal Start -->
+                    <div class="split-modal h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 z-40 hidden">
+                        <!-- Modal -->
+                        <div class="bg-white rounded shadow-lg w-1/3">
+                            <!-- Modal Header -->
+                            <div class="border-b px-4 py-2 flex justify-between">
+                            <h3>Split Table</h3>
+                            <!-- <button class="text-black close-modal">&cross;</button> -->
+                            </div>
+                            <!-- Modal Body -->
+                            <div class="p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quia. Perspiciatis a alias fugit similique beatae doloremque sequi eveniet provident ex dignissimos rem accusamus expedita voluptates ea, cumque aut ullam!
+                            </div>
+                            <div class="flex justify-end itmes-center w-100 border-t p-3">
+                                <button class="bg-red-500 hover:bg-red-700 px-3 py-1 rounded text-white mr-1 close-split-modal">Cancel</button>
+                                <button class="bg-blue-500 hover:bg-blue-700 px-3 py-1 rounded text-white">Okay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Split Modal End -->
+
+                     <!-- Transfer Modal Start -->
+                     <div class="transfer-modal h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 z-40 hidden">
+                        <!-- Modal -->
+                        <div class="bg-white rounded shadow-lg w-1/3">
+                            <!-- Modal Header -->
+                            <div class="border-b px-4 py-2 flex justify-between">
+                            <h3>Transfer Table</h3>
+                            <!-- <button class="text-black close-modal">&cross;</button> -->
+                            </div>
+                            <!-- Modal Body -->
+                            <div class="p-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quia. Perspiciatis a alias fugit similique beatae doloremque sequi eveniet provident ex dignissimos rem accusamus expedita voluptates ea, cumque aut ullam!
+                            </div>
+                            <div class="flex justify-end itmes-center w-100 border-t p-3">
+                                <button class="bg-red-500 hover:bg-red-700 px-3 py-1 rounded text-white mr-1 close-transfer-modal">Cancel</button>
+                                <button class="bg-blue-500 hover:bg-blue-700 px-3 py-1 rounded text-white">Okay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Transfer Modal End -->
+
+                   
+                
+
+                        
+
+                        
+                        <hr class="mt-2 h-4">
                        
-                        <hr class="mt-2 h-5">
+                     
 
                         <div class="text-center">
+                            <div class="flex justify-evenly">
+                                <a href="#" class="py-3">
+                                    <button class="text-white font-bold text-sm bg-bluePOS-100 rounded-lg px-3 py-3 w-24">
+                                    <svg class="fill-white h-5 w-5 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M252 208C252 196.1 260.1 188 272 188H288C299 188 308 196.1 308 208V276H312C323 276 332 284.1 332 296C332 307 323 316 312 316H264C252.1 316 244 307 244 296C244 284.1 252.1 276 264 276H268V227.6C258.9 225.7 252 217.7 252 208zM512 64C547.3 64 576 92.65 576 128V384C576 419.3 547.3 448 512 448H64C28.65 448 0 419.3 0 384V128C0 92.65 28.65 64 64 64H512zM128 384C128 348.7 99.35 320 64 320V384H128zM64 192C99.35 192 128 163.3 128 128H64V192zM512 384V320C476.7 320 448 348.7 448 384H512zM512 128H448C448 163.3 476.7 192 512 192V128zM288 144C226.1 144 176 194.1 176 256C176 317.9 226.1 368 288 368C349.9 368 400 317.9 400 256C400 194.1 349.9 144 288 144z"/></svg>
+                                        Cash
+                                    </button>
+                                </a>
+                                <a href="#" class=" py-3">
+                                    <button class="text-white font-bold text-sm bg-bluePOS-100 rounded-lg px-3 py-3 w-24">
+                                        <svg class="fill-white h-5 w-5 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 32C547.3 32 576 60.65 576 96V128H0V96C0 60.65 28.65 32 64 32H512zM576 416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V224H576V416zM112 352C103.2 352 96 359.2 96 368C96 376.8 103.2 384 112 384H176C184.8 384 192 376.8 192 368C192 359.2 184.8 352 176 352H112zM240 384H368C376.8 384 384 376.8 384 368C384 359.2 376.8 352 368 352H240C231.2 352 224 359.2 224 368C224 376.8 231.2 384 240 384z"/></svg>
+                                        Debit Card
+                                    </button>
+                                </a>
+                                <a href="#" class=" py-3">
+                                    <button class="text-white font-bold text-sm bg-bluePOS-100 rounded-lg px-3 py-3 w-24">
+                                        <svg class="fill-white h-5 w-5 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M252 208C252 196.1 260.1 188 272 188H288C299 188 308 196.1 308 208V276H312C323 276 332 284.1 332 296C332 307 323 316 312 316H264C252.1 316 244 307 244 296C244 284.1 252.1 276 264 276H268V227.6C258.9 225.7 252 217.7 252 208zM512 64C547.3 64 576 92.65 576 128V384C576 419.3 547.3 448 512 448H64C28.65 448 0 419.3 0 384V128C0 92.65 28.65 64 64 64H512zM128 384C128 348.7 99.35 320 64 320V384H128zM64 192C99.35 192 128 163.3 128 128H64V192zM512 384V320C476.7 320 448 348.7 448 384H512zM512 128H448C448 163.3 476.7 192 512 192V128zM288 144C226.1 144 176 194.1 176 256C176 317.9 226.1 368 288 368C349.9 368 400 317.9 400 256C400 194.1 349.9 144 288 144z"/></svg>
+                                        E-Wallet
+                                    </button>
+                                </a>
+                            </div>
                             <a href="#" class=" py-3">
-                                <button class="text-white font-bold text-2xl bg-bluePOS-100 rounded-full h-10 w-full">Place Order</button>
+                                <button class="text-white font-bold text-xl bg-bluePOS-100 rounded-full h-10 w-full">Place Order</button>
                             </a>
                         </div>
 
@@ -397,5 +334,68 @@
                     </div>
                     <!-- Order List Menu End -->
                 </div>
+
             </div>
+
+            @section('javascript')
+                <script>
+                       let greenForm = document.getElementById('GreenOrderList');
+                       let redForm = document.getElementById('RedOrderList');
+                       let greenTable = document.getElementById('greenTable');
+                       let redTable = document.getElementById('redTable');
+
+                       function green(){
+                            greenForm.classList.remove('hidden');
+                            redForm.classList.add('hidden');
+                       }
+
+                       function red(){
+                            greenForm.classList.add('hidden');
+                            redForm.classList.remove('hidden');
+                       }
+
+                       /* Merge Modal JS */
+                       const showMergeModal = document.querySelector('.show-merge-modal');
+                       const mergeModal = document.querySelector('.merge-modal');
+                       const closeMergeModal = document.querySelector('.close-merge-modal');
+
+                       showMergeModal.addEventListener('click', function(){
+                        mergeModal.classList.remove('hidden')
+                        });
+
+                        closeMergeModal.addEventListener('click', function(){
+                            mergeModal.classList.add('hidden')
+                        });
+
+                        /* Split Modal JS */
+                        const showSplitModal = document.querySelector('.show-split-modal');
+                        const splitModal = document.querySelector('.split-modal');
+                        const closeSplitModal = document.querySelector('.close-split-modal')
+                        
+                      
+                       showSplitModal.addEventListener('click', function(){
+                         splitModal.classList.remove('hidden')
+                       });
+
+                       closeSplitModal.addEventListener('click', function(){
+                        splitModal.classList.add('hidden')
+                       });
+
+                        /* Transfer Modal JS */
+                        const showTransferModal = document.querySelector('.show-transfer-modal');
+                        const transferModal = document.querySelector('.transfer-modal');
+                        const closeTransferModal = document.querySelector('.close-transfer-modal')
+                        
+                      
+                        showTransferModal.addEventListener('click', function(){
+                            transferModal.classList.remove('hidden')
+                       });
+
+                       closeTransferModal.addEventListener('click', function(){
+                        transferModal.classList.add('hidden')
+                       });
+
+                      
+                </script>
+            @endsection
 @endsection
